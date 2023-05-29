@@ -37,10 +37,6 @@ def main():
                 write("output.wav", sampling, data)
                 print("Recording has been saved successfully.")
 
-                # myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
-                # sd.wait()  # Wait until recording is finished
-                # print("Nagrywanie zakończone")
-                # write('output.wav', fs, myrecording)  # Save as WAV file
             case 'r':
                 data = read("output.wav")
                 sampling = data[0]
